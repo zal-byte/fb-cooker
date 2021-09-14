@@ -59,13 +59,7 @@ class Cooker(object):
 		return cookie_dict
 
 	def cookie_save(self):
-		c_cook = self.b_0._ua_handlers['_cookies'].cookiejar
-		sexo = ""
-		for c in c_cook:
-			sexo += c.name + "=" + c.value + ";"
-		fuero = open("cook_00.coi", "w")
-		fuero.write(sexo)
-		fuero.close()
+		self.c_0.save('cookie.txt', ignore_discard=True, ignore_expires=True)
 
 	def verify(self, code):
 		self.b_0.open("https://mbasic.facebook.com/login/checkpoint")
@@ -121,6 +115,7 @@ def main():
 		if wh.lower() == "y":
 			code = input("Verify Code > ")
 			cose = Cook.verify(code)
+			Cook.cookie_save()
 
 	elif ret == 1:
 		#????????????/
