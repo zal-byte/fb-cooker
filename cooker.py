@@ -97,6 +97,10 @@ def banner():
 	Facebook Cooker ( Cookie )
 	Creator : zal-byte
 	Github : zal-byte
+
+	Contact me : https://facebook.com/rizal.lolicondesu
+
+	[ ! ] You need to activate Authentication 2 Factor, then input the verification code.
 	"""
 	return ban
 
