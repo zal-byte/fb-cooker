@@ -116,13 +116,8 @@ def main():
 			code = input("Verify Code > ")
 			cose = Cook.verify(code)
 			Cook.cookie_save()
-
-	elif ret == 1:
-		#????????????/
-		print("Save cookies ? (y/n) ")
-		wh = input("Do you want to save the cookies ? > ")
-		if wh.lower() == "y":
-			print("SS")
+	else:
+		print("[ ! ] Activate a2f first !, or your account get locked")
 
 
 
